@@ -39,8 +39,4 @@ public class ShopUI : MonoBehaviour
         itemButton.Find("Item Price Text").GetComponent<TextMeshProUGUI>().SetText(item.GetComponent<Item>().price.ToString());
     }
 
-    public void BuyItem()
-    {
-
-    }
 }

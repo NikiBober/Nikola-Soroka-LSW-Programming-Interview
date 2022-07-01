@@ -36,7 +36,7 @@ public class SellerController : MonoBehaviour
     }
 
 
-    //activate virtual camera that ajusted to follow player and zoom on
+    //activate virtual camera that adjusted to follow player and zoom on
     void ZoomCamera()
     {
         shopCamera.SetActive(true);
