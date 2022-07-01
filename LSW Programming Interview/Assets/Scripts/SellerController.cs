@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SellerController : MonoBehaviour
 {
-    public GameObject store;
 
     public GameObject shopCamera;
     public GameObject shopCanvas;
@@ -15,11 +14,6 @@ public class SellerController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        foreach (Transform item in store.transform)
-        {
-            Debug.Log(item.name);
-        }
-
         if (isInRange)
         {
             ZoomCamera();

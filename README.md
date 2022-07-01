@@ -12,3 +12,5 @@ Seller can say that player is too far away.
 If player is close enough, open shop UI.
 Some time was taken by thinking on shop organisation conception.
 Items to sell must be placed as child of "Store" game object in project hierarchy.
+
+Buy buttons generation is ready. When shop opens, a new button generates for each child object of Store with image, name and price of this object.
