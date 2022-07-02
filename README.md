@@ -18,3 +18,7 @@ Buy buttons generation is ready. When shop opens, a new button generates for eac
 First functionality of buy button: find object by name and make it child of "Player Equipment" to display it on player; deactivate button.
 
 Items transfers in both directions between store and equipment. Buttons are updated after each operation.
+
+Add wallet. Money amount are updated after each operation.
+"Close Shop" button added.
+Minimum functional shop is ready!

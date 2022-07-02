@@ -16,8 +16,7 @@ public class SellerController : MonoBehaviour
     {
         if (isInRange)
         {
-            ZoomCamera();
-            OpenShop();
+            OpenShop(true);
         }
         else
         {
@@ -36,15 +35,11 @@ public class SellerController : MonoBehaviour
     }
 
 
-    //activate virtual camera that adjusted to follow player and zoom on
-    void ZoomCamera()
+    //activate ShopUI canvas and virtual camera that adjusted to follow player and zoom on
+    public void OpenShop(bool isShopOpen)
     {
-        shopCamera.SetActive(true);
-    }
-
-    void OpenShop()
-    {
-        shopCanvas.SetActive(true);
+        shopCamera.SetActive(isShopOpen);
+        shopCanvas.SetActive(isShopOpen);
     }
 
     IEnumerator SayComeCloser()

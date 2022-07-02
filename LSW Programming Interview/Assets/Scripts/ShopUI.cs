@@ -12,11 +12,15 @@ public class ShopUI : MonoBehaviour
     public Transform buyButtonTemplate;
     public Transform sellButtonTemplate;
     public float buttonHeigh;
+    public TextMeshProUGUI moneyAmountText;
+    public int money;
 
     Vector3 offset;
-    int positionIndex = 0;
+    int positionIndex;
+
 
     public static ShopUI Instance;
+    
 
     void Start()
     {
@@ -27,22 +31,24 @@ public class ShopUI : MonoBehaviour
 
     public void FillShop()
     {
+        UpdateWallet(0);
+
+        //delete any previosly maded buttons
         foreach (Transform item in buttonContainer)
         {
             Destroy(item.gameObject);
         }
 
-
+        // generate buy button for each object in Store game object
         positionIndex = 0;
-
         foreach (Transform item in store)
         {
             CreateButton(item, buyButtonTemplate);
             positionIndex++;
         }
 
+        // generate sell button for each object in Equipment game object
         positionIndex = 0;
-
         foreach (Transform item in equipment)
         {
             CreateButton(item, sellButtonTemplate);
@@ -64,4 +70,9 @@ public class ShopUI : MonoBehaviour
         itemButton.gameObject.SetActive(true);
     }
 
+    public void UpdateWallet(int amount)
+    {
+        money += amount;
+        moneyAmountText.SetText(money.ToString());
+    }
 }
