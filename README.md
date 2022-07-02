@@ -25,4 +25,6 @@ Minimum functional shop is ready!
 
 Add player movement by keys. For correct detecting is player in range of seller i set another layer to player and edit collision matrix to not detect collision on the same layer.
 
-Main view is ready. Adjust sprites sorting order and colliders, add some decorations. 
+Main view is ready. Adjust sprites sorting order and colliders, add some decorations.
+
+Finally Shop UI looks good. And added start screen with controls description. And birds sounds :)
