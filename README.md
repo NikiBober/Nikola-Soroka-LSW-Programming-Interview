@@ -22,4 +22,7 @@ Items transfers in both directions between store and equipment. Buttons are upda
 Add wallet. Money amount are updated after each operation.
 "Close Shop" button added.
 Minimum functional shop is ready!
+
 Add player movement by keys. For correct detecting is player in range of seller i set another layer to player and edit collision matrix to not detect collision on the same layer.
+
+Main view is ready. Adjust sprites sorting order and colliders, add some decorations. 
