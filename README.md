@@ -14,3 +14,7 @@ Some time was taken by thinking on shop organisation conception.
 Items to sell must be placed as child of "Store" game object in project hierarchy.
 
 Buy buttons generation is ready. When shop opens, a new button generates for each child object of Store with image, name and price of this object.
+
+First functionality of buy button: find object by name and make it child of "Player Equipment" to display it on player; deactivate button.
+
+Items transfers in both directions between store and equipment. Buttons are updated after each operation.
