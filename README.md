@@ -3,7 +3,7 @@
 
 
 First few hours i spend to chose art from Unity asset store.
-I imopt only art, not take any premade mechanics.
+I imopt only art.
 Paint simply building, add shopkeeper and few environment elements.
 
 Add interaction with seller.
